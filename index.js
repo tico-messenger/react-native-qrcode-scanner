@@ -221,6 +221,7 @@ export default class QRCodeScanner extends Component {
             }}
           >
             <Camera
+              ratio={'1:1'}
               style={[styles.camera, this.props.cameraStyle]}
               onBarCodeRead={this._handleBarCodeRead.bind(this)}
               type={this.props.cameraType}
@@ -233,6 +234,7 @@ export default class QRCodeScanner extends Component {
       }
       return (
         <Camera
+          ratio={'1:1'}
           type={cameraType}
           style={[styles.camera, this.props.cameraStyle]}
           onBarCodeRead={this._handleBarCodeRead.bind(this)}
